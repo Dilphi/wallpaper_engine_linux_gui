@@ -1,6 +1,9 @@
 import flet as ft
 import os
 import subprocess
+import json
+import subprocess
+import psutil
 
 HYPRLAND_CONF = os.path.expanduser("~/.config/hypr/hyprland.conf")
 
@@ -53,17 +56,36 @@ def main(page: ft.Page):
 
         except Exception as e:
             print(f"Ошибка обновления hyprland.conf: {e}")
+        
+    def get_primary_monitor():
+        try:
+            output = subprocess.check_output(["hyprctl", "monitors", "-j"])
+            monitors = json.loads(output)
+            # Можно выбрать первый активный монитор или искать primary
+            if monitors:
+                return monitors[0]["name"]
+        except Exception as e:
+            print(f"Ошибка получения монитора: {e}")
+        return "HDMI-A-2"  # fallback
+
+
+    def kill_wallpaperengine():
+        for proc in psutil.process_iter(['name']):
+            if proc.info['name'] == 'linux-wallpaperengine':
+                proc.kill()
 
     def set_wallpaper(folder_id):
         try:
+            kill_wallpaperengine()  # завершить старые процессы
+            monitor = get_primary_monitor()
             subprocess.Popen([
                 "linux-wallpaperengine",
                 "--silent",
-                "--screen-root", "HDMI-A-2",
+                "--screen-root", monitor,
                 str(folder_id)
             ])
             update_hyprland_conf(folder_id)
-            print(f"Запущен wallpaperengine для {folder_id}")
+            print(f"Запущен wallpaperengine для {folder_id} на {monitor}")
         except Exception as e:
             print(f"Ошибка запуска: {e}")
 
