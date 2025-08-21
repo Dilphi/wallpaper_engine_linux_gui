@@ -1,35 +1,34 @@
 ## EN
 
 # 🎨 Wallpaper Engine Linux GUI
-
-A graphical interface for managing [linux-wallpaperengine](https://github.com/Almamu/linux-wallpaperengine) on Linux.  
-It allows you to easily launch and control live wallpapers right from your desktop.  
+Graphical management interface [linux-wallpaperengine](https://github.com/Almamu/linux-wallpaperengine ) on Linux.  
+Allows you to conveniently launch and manage live wallpapers directly from your desktop.  
 
 ---
 
-## 📥 Installation
+## , Installation
 
 ### 🐧 Arch Linux (AUR)
-If you are using Arch Linux or its derivatives (Manjaro, EndeavourOS, etc.), you can install the latest dev version directly from **AUR**:
+If you are using Arch Linux or derivatives (Manjaro, EndeavourOS, etc.), you can install the latest dev version directly from **AUR**:
 
 ```bash
 yay -S linux-wallpaperengine-git
 ````
 
 > ⚡️ This will install the latest **development** version.
-> 📌 **Note**: You will still need assets from the official Wallpaper Engine (via Steam).
+> 📌 **Important**: You will still need assets from the official Wallpaper Engine (via Steam).
 
 ---
 
 ## 🚀 Launch
 
-After installation, simply start the GUI:
+After installation, just run the GUI:
 
 ```bash
-wallpaper_engine_linux_gui
+wallpaper_gui.bin
 ```
 
-On the first launch, set the path to your Steam Workshop content, usually located at:
+By default, the path to the Steam Workshop content is used.:
 
 ```
 ~/.steam/steam/steamapps/workshop/content/431960
@@ -37,22 +36,22 @@ On the first launch, set the path to your Steam Workshop content, usually locate
 
 ---
 
-## 🖼️ Features
+## 🖼️ Opportunities
 
-* 🌌 Manage live wallpapers through an easy-to-use interface
-* 🎮 Support for **Steam Workshop** assets
-* ⚙️ Flexible configuration
-
----
-
-## 📚 Useful Links
-
-* 🔗 [Official linux-wallpaperengine](https://github.com/Almamu/linux-wallpaperengine)
-* 🐧 AUR package: [`linux-wallpaperengine-git`](https://aur.archlinux.org/packages/linux-wallpaperengine-git)
+* 🌌 Manage your live wallpaper through a user-friendly interface
+* 🎮 Asset support from **Steam Workshop**
+* ⚙️ Flexible settings
 
 ---
 
-💡 If you’d like to contribute to the project, feel free to open **issues** or submit **pull requests**!
+## 📚 Useful links
+
+* 🔗 [Official linux wallpaperengine](https://github.com/Almamu/linux-wallpaperengine )
+* 🐧 AUR package: [`linux-wallpaperengine-git`](https://aur.archlinux.org/packages/linux-wallpaperengine-git )
+
+---
+
+If you want to help the project, feel free to open **issues** or send **pull requests**!
 
 # RU
 # 🎨 Wallpaper Engine Linux GUI
@@ -80,10 +79,10 @@ yay -S linux-wallpaperengine-git
 После установки просто запустите GUI:
 
 ```bash
-wallpaper_engine_linux_gui
+wallpaper_gui.bin
 ```
 
-При первом запуске укажите путь к контенту Steam Workshop, обычно он находится по пути:
+По умолчанию используется путь к контенту Steam Workshop:
 
 ```
 ~/.steam/steam/steamapps/workshop/content/431960
@@ -107,6 +106,3 @@ wallpaper_engine_linux_gui
 ---
 
 💡 Если вы хотите помочь проекту — не стесняйтесь открывать **issues** или отправлять **pull requests**!
-Вот перевод твоего README на английский:
-
-````markdown
