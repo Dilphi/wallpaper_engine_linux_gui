@@ -27,12 +27,12 @@ After installation, just run the GUI:
 ```bash
 wallpaper_gui.bin
 ```
-If you get an error, use the command
+If you get an error, use the command:
 
 ```bash
 sudo pacman -S mpv && sudo ln -s /usr/lib/libmpv.so /usr/lib/libmpv.so.1
 ```
-If mpv is installed then use the command
+If mpv is installed then use the command:
 
 ```bash
 sudo ln -s /usr/lib/libmpv.so /usr/lib/libmpv.so.1
@@ -91,12 +91,12 @@ yay -S linux-wallpaperengine-git
 ```bash
 wallpaper_gui.bin
 ```
-Если выдаст ошибку то воспользуйтесь командой
+Если выдаст ошибку то воспользуйтесь командой:
 
 ```bash
 sudo pacman -S mpv && sudo ln -s /usr/lib/libmpv.so /usr/lib/libmpv.so.1
 ```
-Если mpv установлен тогда воспользуйтесь командой
+Если mpv установлен тогда воспользуйтесь командой:
 
 ```bash
 sudo ln -s /usr/lib/libmpv.so /usr/lib/libmpv.so.1
