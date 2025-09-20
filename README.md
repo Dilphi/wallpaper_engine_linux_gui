@@ -27,6 +27,16 @@ After installation, just run the GUI:
 ```bash
 wallpaper_gui.bin
 ```
+If you get an error, use the command
+
+```bash
+sudo pacman -S mpv && sudo ln -s /usr/lib/libmpv.so /usr/lib/libmpv.so.1
+```
+If mpv is installed then use the command
+
+```bash
+sudo ln -s /usr/lib/libmpv.so /usr/lib/libmpv.so.1
+```
 
 By default, the path to the Steam Workshop content is used.:
 
@@ -80,6 +90,16 @@ yay -S linux-wallpaperengine-git
 
 ```bash
 wallpaper_gui.bin
+```
+Если выдаст ошибку то воспользуйтесь командой
+
+```bash
+sudo pacman -S mpv && sudo ln -s /usr/lib/libmpv.so /usr/lib/libmpv.so.1
+```
+Если mpv установлен тогда воспользуйтесь командой
+
+```bash
+sudo ln -s /usr/lib/libmpv.so /usr/lib/libmpv.so.1
 ```
 
 По умолчанию используется путь к контенту Steam Workshop:
